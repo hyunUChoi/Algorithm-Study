@@ -1,2 +1,6 @@
 # Algorithm-Study
-This is a auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+### 꾸준히 하루에 하나씩이라도 알고리즘 풀어보기
+* 프로그래머스
+* 백준
+
+### 프로그래머스 3단계 & 백준 플래티넘 등급 도전하기
