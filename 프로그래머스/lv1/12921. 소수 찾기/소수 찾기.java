@@ -8,6 +8,7 @@ class Solution {
         }
         
         for(int i = 2; i <= n; i++) {
+            if(arr[i] == 0) continue;
             // 각 배수를 삭제
             for(int j = 2 * i; j <= n; j += i) {
                 arr[j] = 0;
