@@ -1,4 +1,5 @@
 class Solution {
+    /*
     public String solution(String s, int n) {
         String answer = "";
         char[] ch = s.toCharArray();
@@ -21,5 +22,30 @@ class Solution {
         }
         
         return answer;
+    }
+    */
+    
+    /*
+    * 속도 개선
+    */
+    public String solution(String s, int n) {
+        StringBuilder answer = new StringBuilder();
+        
+        for(int i = 0; i < s.length(); i++) {
+            int ch = s.charAt(i);
+            
+            if(ch != 32) {
+                if(ch <= 90) {
+                    ch += n;
+                    if(ch > 90) ch -= 26;
+                } else {
+                    ch += n;
+                    if(ch > 122) ch -= 26;
+                }
+            }
+             answer.append((char) ch);
+        }
+        
+        return answer.toString();
     }
 }
