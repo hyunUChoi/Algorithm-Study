@@ -1,15 +1,12 @@
-import java.util.*;
-
 class Solution {
     public int solution(int n) {
-        List<Integer> list = new ArrayList<>();
+        int answer = 1;
         
-        for(int i = 1; i <= n; i++) {
-            if(n % i == 1) {
-                list.add(i);
-            }
+        while(true) {
+            if(n % answer == 1) break;
+            answer++;
         }
         
-        return list.get(0);
+        return answer;
     }
 }
