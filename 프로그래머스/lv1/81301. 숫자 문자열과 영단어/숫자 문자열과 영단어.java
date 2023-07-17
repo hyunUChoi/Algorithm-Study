@@ -1,6 +1,8 @@
 import java.util.*;
 
 class Solution {
+    /*
+    // Map 사용
     public int solution(String s) {
         StringBuilder sb = new StringBuilder();
         String[] arr = s.split("");
@@ -33,5 +35,17 @@ class Solution {
         }
         
         return Integer.parseInt(sb.toString());
+    }
+    */
+    
+    // ReplaceAll 사용
+    public int solution(String s) {
+        String[] arr = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+        
+        for(int i = 0; i < arr.length; i++) {
+            s = s.replaceAll(arr[i], Integer.toString(i));
+        }
+        
+        return Integer.parseInt(s);
     }
 }
