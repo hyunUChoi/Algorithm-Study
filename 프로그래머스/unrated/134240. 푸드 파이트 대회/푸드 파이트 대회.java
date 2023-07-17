@@ -1,18 +1,12 @@
 class Solution {
     public String solution(int[] food) {
-        String answer = "";
-        StringBuilder sb = new StringBuilder();
+        String answer = "0";
         
-        for(int i = 1; i < food.length; i++) {
-            if(food[i] > 1) {
-                for(int j = 0; j < food[i]/2; j++) {
-                    answer += "" + i;
-                    sb.append(i);
-                }
+        for(int i = food.length - 1; i >= 0; i--) {
+            for(int j = 0; j < food[i]/2; j++) {
+                answer = i + answer + i;
             }
         }
-        
-        answer += "0" + sb.reverse().toString();
         
         return answer;
     }

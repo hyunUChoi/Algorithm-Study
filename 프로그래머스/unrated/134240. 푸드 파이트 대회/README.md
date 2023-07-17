@@ -1,10 +1,10 @@
 # [unrated] 푸드 파이트 대회 - 134240 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/134240) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/134240?language=java) 
 
 ### 성능 요약
 
-메모리: 76.3 MB, 시간: 18.42 ms
+메모리: 78.5 MB, 시간: 11.63 ms
 
 ### 구분
 
